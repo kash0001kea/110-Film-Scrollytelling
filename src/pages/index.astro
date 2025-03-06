@@ -16,13 +16,16 @@ import contentImage from "../assets/images/content-image.jpg";
 			<!-- <Button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
 				Get Started
 			</Button> -->
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mt-8 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-			</svg>
+			<a href="#start" class="rounded-full bg-white p-2 inline-block animate-bounce mt-8" onclick="event.preventDefault(); document.querySelector('#start').scrollIntoView({ behavior: 'smooth', easing: 'ease-in-out' });">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto stroke-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+				</svg>
+			</a>
 		</div>
 	</section>
+	<div id="start"></div>
 
-	<section class="mt-16 py-20 px-24 bg-gray-100 rounded-xl max-w-6xl m-auto">
+	<section class="mt-24 py-20 px-24 bg-gray-100 rounded-xl max-w-6xl m-auto">
 		<div class="container mx-auto text-center max-w-6xl">
 			<h2 class="text-3xl font-bold mb-4 prose">Engang anset for at være forældet, blev 110-film genoplivet af Lomography i 2012, hvilket genantændte interessen og begejstringen for analog fotografi.</h2>
 		</div>
@@ -100,4 +103,34 @@ import contentImage from "../assets/images/content-image.jpg";
 			</div>
 		</div>
 	</section>
+
+	<!-- add an image gallery with 4 pictures -->
+	<section class="py-24">
+		<div class="container mx-auto max-w-6xl">
+			<h2 class="text-4xl font-bold mb-8 text-center">Farve galleri</h2>
+			<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+				<img src="/galleri/amusment_park.jpg" alt="Content Image 1" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/beach.jpg" alt="Content Image 2" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/bike.jpg" alt="Content Image 3" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/building.jpg" alt="Content Image 4" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/cactus.jpg" alt="Content Image 5" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/city1.jpg" alt="Content Image 6" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/cow2.jpg" alt="Content Image 7" class="w-full h-auto rounded-lg shadow-lg" />
+				<img src="/galleri/dock.jpg" alt="Content Image 8" class="w-full h-auto rounded-lg shadow-lg" />
+			</div>
+		</div>
+
+		<div class="container mx-auto max-w-6xl my-24">
+			<h2 class="text-4xl font-bold mb-8 text-center">Sort og hvid galleri</h2>
+			<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+				<img src="/galleri/city2.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/flowers1.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/fjord1.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/town.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/cat.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/mountain1.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/park.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+				<img src="/galleri/swing1.jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg filter grayscale" />
+			</div>
+		</div>
 </MainLayout>
