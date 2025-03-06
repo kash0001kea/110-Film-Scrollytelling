@@ -4,12 +4,100 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import heroImage from "../assets/images/hero-background.jpg";
+import contentImage from "../assets/images/content-image.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<MainLayout title="110 Film">
+	
+	<section class="relative bg-cover bg-center bg-fixed text-white py-80" style="background-image: url(/110film/pexels-photo-1983037.jpeg); background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken;">
+		<div class="container mx-auto text-center">
+			<h1 class="text-2xl font-bold mb-4">110-films comeback:</h1>
+			<p class="text-7xl font-bold mb-8">Hvordan Lomography <br>genoplivede et glemt format.</p>
+			<!-- <Button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+				Get Started
+			</Button> -->
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto mt-8 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+			</svg>
+		</div>
+	</section>
+
+	<section class="mt-16 py-20 px-24 bg-gray-100 rounded-xl max-w-6xl m-auto">
+		<div class="container mx-auto text-center max-w-6xl">
+			<h2 class="text-3xl font-bold mb-4 prose">Engang anset for at være forældet, blev 110-film genoplivet af Lomography i 2012, hvilket genantændte interessen og begejstringen for analog fotografi.</h2>
+		</div>
+	</section>
+
+	<!-- Hvad er 110-film? -->
+	<section class="">
+		<div class="container mx-auto max-w-6xl py-24">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 content-center items-center">
+				<div>
+					<h2 class="text-4xl font-bold mb-4">Hvad er 110-film?</h2>
+					<p class="text-lg mb-4 prose">110-film blev introduceret af Kodak i 1972 som et kompakt, kassettebaseret format kendt for sin bekvemmelighed, men med begrænset billedkvalitet. Produktionen stoppede i begyndelsen af 2000'erne, indtil Lomography genintroducerede det.</p>
+				</div>
+				<div>
+					<img src="/public/110film/Kodak_Graffiti_110_film_Camera_&_Kodak_Ultra_400_110_film_(51886965973).jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="">
+		<div class="container mx-auto max-w-6xl py-24">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 content-center items-center">
+				<div>
+					<img src="/public/110film/pexels-photo-1203803.jpeg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg" />
+				</div>
+				<div>
+					<h2 class="text-4xl font-bold mb-4">Hvorfor blev 110-film afskaffet?</h2>
+					<p class="text-lg mb-4 prose">Overgangen til digital fotografering og 110-films lille negativformat førte til dets fald, og de fleste producenter stoppede produktionen inden 2009.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Hvad er 110-film? -->
+	<section class="">
+		<div class="container mx-auto max-w-6xl py-24">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 content-center items-center">
+				<div>
+					<h2 class="text-4xl font-bold mb-4">Hvordan Lomography genoplivede 110-film</h2>
+					<p class="text-lg mb-4 prose">Lomography bragte 110-film tilbage i 2012 med Orca 110, efterfulgt af Color Tiger og LomoChrome Purple, samt nye 110-kameraer.</p>
+				</div>
+				<div>
+					<img src="/public/110film/Kodak_Graffiti_110_film_Camera_&_Kodak_Ultra_400_110_film_(51886965973).jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="">
+		<div class="container mx-auto max-w-6xl py-24">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 content-center items-center">
+				<div>
+					<img src="/public/110film/pexels-photo-1203803.jpeg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg" />
+				</div>
+				<div>
+					<h2 class="text-4xl font-bold mb-4">Formatet i dag</h2>
+					<p class="text-lg mb-4 prose">110-film forbliver et nicheformat, men trives stadig, med Lomography som fortsat producent og en engageret fællesskabsstøtte.</p>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<!-- Hvad er 110-film? -->
+	<section class="">
+		<div class="container mx-auto max-w-6xl py-24">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 content-center items-center">
+				<div>
+					<h2 class="text-4xl font-bold mb-4">110-films fremtid</h2>
+					<p class="text-lg mb-4 prose">Takket være Lomography lever 110-film videre som et kreativt medie med en stabil fremtid blandt analoge fotoentusiaster.</p>
+				</div>
+				<div>
+					<img src="/public/110film/Kodak_Graffiti_110_film_Camera_&_Kodak_Ultra_400_110_film_(51886965973).jpg" alt="Content Image" class="w-full h-auto rounded-lg shadow-lg" />
+				</div>
+			</div>
+		</div>
+	</section>
 </MainLayout>
